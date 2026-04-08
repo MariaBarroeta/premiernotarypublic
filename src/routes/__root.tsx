@@ -3,30 +3,22 @@ import siteContent from '../data/site-content';
 import '../styles.css';
 
 const RootRoute = () => {
-    const { title, description, services, contact, hours } = siteContent;
-
     return (
         <div className="root-route">
             <header>
-                <h1>{title}</h1>
+                <h1>Premier Notary Public</h1>
             </header>
             <main>
-                <p>{description}</p>
+                <p>Your trusted notary public service</p>
                 <h2>Our Services</h2>
                 <ul>
-                    {services.map((service, index) => (<li key={index}>{service}</li>))}
+                    <li>Affidavits</li>
+                    <li>Power of Attorney</li>
+                    <li>Notary Services</li>
                 </ul>
-                <section className="contact-info">
-                    <h2>Contact Us</h2>
-                    <p>{contact}</p>
-                </section>
-                <section className="hours">
-                    <h2>Working Hours</h2>
-                    <p>{hours}</p>
-                </section>
             </main>
             <footer>
-                <p>&copy; {new Date().getFullYear()} Premier Notary Public</p>
+                <p>&copy; 2026 Premier Notary Public</p>
             </footer>
         </div>
     );
